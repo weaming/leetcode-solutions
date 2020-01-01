@@ -48,7 +48,7 @@ def main(directory):
             input = t['input']
             answer = t['answer']
             result = entry(input)
-            arrow = f"'{input}' => {result}"
+            arrow = f"<{input}> => <{result}>"
             assert result == answer, f'{arrow} != {answer}'
             print(arrow)
 
